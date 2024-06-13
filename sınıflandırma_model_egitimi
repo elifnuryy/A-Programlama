@@ -291,5 +291,3 @@ sns.scatterplot(x="X_test_nca_p1", y="X_test_nca_p2", hue="Y_test_nca",data=test
 
 diff = np.where(y_pred_nca!=Y_test_nca)[0]
 plt.scatter(test_data.iloc[diff,0],test_data.iloc[diff,1],label = "Wrong Classified",alpha = 0.2,color = "red",s = 1000)
-
-
